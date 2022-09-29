@@ -1,0 +1,17 @@
+ALGORITHM triParInsertion
+VAR
+    mainGauche : ARRAY_OF integer[5];
+    mainDroite : ARRAY_OF integer[5];
+    var i , n : integer := 0 ;
+BEGIN
+    FOR i FROM 0 TO mainGauche.length-1 STEP 1  DO 
+    IF (mainGauche.length = 0) THEN
+        break
+    END_IF
+    n := mainGauche[i+1]
+    IF (mainGauche[i] > n) THEN
+        mainDroite[n]
+    END_IF
+    END_FOR
+    write(mainDroite)
+END
